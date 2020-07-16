@@ -7,57 +7,60 @@ I used python to implement this project so the requirements mostly refer to pyth
 
 If you are using a newer version of linux you will find that pip is no longer available by default. You can either install pip3 using the following command:
 
-    `sudo apt-get install python3-pip`
+    sudo apt-get install python3-pip
 
 Or if you still prefer to use pip you can download it:
 
-    `sudo add-apt-repository universe`
+    sudo add-apt-repository universe
 
-    `sudo apt update`
+    sudo apt update
 
-    `sudo apt install python2`
+    sudo apt install python2
 
-    `curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py`
+    curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
 
-    `sudo python2 get-pip.py`
+    sudo python2 get-pip.py
 
 Now after getting your preferred version of pip, you now need to download the required libraries. I recommend setting up a virtual environment before downloading these libraries so that dependencies from different projects don't mix up and cause problems in the future.
 You can take the following steps to set up a virtual environment in your preferred directory:
 
 1. First create a directory for your installation:
 
-        `mkdir .virtualenv`
+        mkdir .virtualenv
 
 2. Install virtualenvwrapper with pip3. If you wish to use pip replace 'pip3' with 'pip:
 
-        `pip3 install virtualenvwrapper`
+        pip3 install virtualenvwrapper
 
 3. Now you must access your .bashrc file and add the virtualenvwrapper environment variable. You can use any editor for this but I prefer Vim.
 
-        `vim .bashrc`
+        vim .bashrc
 
 4. Add the following text to the .bashrc file:
 
- ```
-    #Virtualenvwrapper settings:
+   ```
+     #Virtualenvwrapper settings:
 
-    export WORKON_HOME=$HOME/.virtualenvs
+     export WORKON_HOME=$HOME/.virtualenvs
 
-    VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+     VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 
-    . /usr/local/bin/virtualenvwrapper.sh 
-```
+     . /usr/local/bin/virtualenvwrapper.sh 
+ 
 5. After saving your edit you can create a virtual environment in the directory of your choice using the following command:
     
-        `mkvirtualenv name_of_your_env`
+    ```
+    mkvirtualenv name_of_your_env
 6.  To deactivate the environment, use the command:
 
-        `deactivate`
+    
+        deactivate
     
     And to work on a previously created environment use the command:
-
-        `workon`
-
+    
+     
+        workon
+     
 After setting up your virtual environment you have to download OpenCV and Numpy libraries for image processing.
 
 To download OpenCV, take the following steps:
@@ -68,13 +71,13 @@ To download OpenCV, take the following steps:
 ```
 To verify the installation type in the following command:
 
-    `python3 -c "import cv2; print(cv2.__version__)"`
+    python3 -c "import cv2; print(cv2.__version__)"
 
 If you get your OpenCV version as your output then you have successfully installed OpenCV.
 
 To download Numpy, simply type in the following command:
 
-    `pip3 install numpy`
+    pip3 install numpy
 
 
 # Working
