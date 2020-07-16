@@ -1,5 +1,5 @@
 # Facial Recognition - Aligning faces in images for better results
-This guide will showcase how one can de-skew images that are skewed to an angle greater than 90 degrees. The complete alignment procedure has been divided into two parts. The first part rotates the image until a face is recognized, the second part aligns the face so as to better the odds of it being recognized. 
+This guide will showcase how one can de-skew skewed images so that facial recognition models have a higher chance of detecting faces in the images. The complete alignment procedure has been divided into two parts. The first part rotates the image until a face is recognized, the second part aligns the face so as to better the odds of it being recognized. 
 
 
 # Requirements and Installation
