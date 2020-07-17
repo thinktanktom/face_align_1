@@ -86,4 +86,4 @@ The logic behind the program is very easy to understand. We simply rotate the im
 
 # Fin 
 
-The second part of this project which includes further alignment of the resultant image will be coming soon. I will also dockerize both parts so that you can sample them without much hassle.
+The second part of this project can be found [here](https://github.com/CodeSaint98/face-align-2). I will also dockerize both parts so that you can sample them without much hassle.
